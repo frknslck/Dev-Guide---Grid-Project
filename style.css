@@ -4,6 +4,14 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body{
+    background-color: #606c82;
+}
+
+#div-info{
+    visibility:hidden ;
+}
+
 header{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -29,10 +37,24 @@ header > nav > a{
     margin-right: 100px;
 }
 
+.navbar{
+    position: sticky;
+    top: 0px;
+    opacity: 0.9;
+}
+
 a {
+    border: solid white 3px;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 20px;
     font-weight: bolder;
     color: white;
     text-decoration: none;
+}
+
+a:hover{
+    border: solid #EF8354 3px;
 }
 
 a:visited{
@@ -45,27 +67,73 @@ a:visited{
 
 .container{
     margin-top: 50px;
-    border: 5px solid black;
 }
 
-#div-info{
+.container :nth-child(4){
+    margin-bottom: 100px;
+}
+
+article{
+    padding: 80px 50px 20px;
+    border-radius: 60px;
+    /* margin-bottom: 50px; */
+}
+
+.container :nth-child(1){
+    padding-top: 0px;
+}
+
+.art-head{
+    height: 3.5rem;
     display: grid;
-    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    align-items: center;
+    background-color:#EF8354;
 }
 
 .art-content{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 3fr 3fr;
     grid-auto-rows: minmax(200px, auto);
-    border: 5px solid rgb(10, 255, 231);
+    background-color:#dddddd ;
 }
 
-.art-head{
+img{
+    width: 100%;
+}
+
+.content-img {
+    display: flex;
+    justify-content: center;
+}
+
+.content-p{
+    padding: 10px 15px;
+    text-indent: 30px;
+    /* padding-left: 15px; */
+    border-left: 1px solid black;
+}
+
+footer{
+    color: white;
+    background-color: #3f4755;
     display: grid;
-    justify-items: center;
-    border: 5px solid rgb(255, 0, 0);
+    grid-template-columns: repeat(3, 1fr);
 }
 
+.content-pp{
+    padding: 10px 15px;
+    text-indent: 30px;
+    border-right: 1px solid black;
+}
 
+.footer {
+    width: fit-content;
+    margin: 30px;
+    justify-self: center;
+    align-self: center;
+}
 
-
+.footer a {
+    margin: 30px;
+}
