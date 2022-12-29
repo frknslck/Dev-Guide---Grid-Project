@@ -19,7 +19,7 @@ header{
     color: white;
 }
 
-header > h1{
+header h1{
     align-self: start;
     justify-self: start;
     padding: 0.5rem;
@@ -27,13 +27,13 @@ header > h1{
     margin-left: 100px;
 }
 
-header > nav{
+header nav{
     justify-self: end;
     align-self: center;
     padding: 1rem;
 }
 
-header > nav > a{
+header nav a{
     margin-right: 100px;
 }
 
